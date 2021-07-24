@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #455a64;
+  font-family: "Fira Sans", sans-serif;
+}
+
+#btn:hover, .menu:hover {
+  box-shadow: 0rem 0.2rem 0.8rem #fff;
+  color: #fff;
+  background-color: rgba(0, 132, 255, 0.3);
+}
+
+.menu {
+  position: fixed;
+  z-index: 998;
+  top: 50px;
+  right: 70px;
+  text-align: center;
+  border-radius: 100%;
+  background-color: #fff;
+  color: #455a64;
+  padding: 0 1rem;
+  font-size: 3rem;
+  box-shadow: 0rem 0.2rem 0.8rem black;
+  cursor: pointer;
+  transition: 1s;
+}
+
+nav {
+  top: 110px;
+  right: 70px;
+  z-index: 999;
+  display: none;
+  position: fixed;
+  background-color: #fff;
+  padding: 2rem 6rem 1rem 3rem;
+  border-radius: 5px;
+  box-shadow: 0.1rem 0.2rem 0.8rem black;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+nav ul li {
+  margin-bottom: 1.7rem;
+}
+nav ul li a {
+  color: #455a64;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: 1s;
+}
+nav ul li a:hover {
+  color: rgba(41, 138, 230, 0.981);
+  text-shadow: 0.2rem 0.6rem 0.3rem #202441;
+}
+
+.container {
+  width: 100%;
+  height: 700px;
+  background-image: url("../images/jumbo_background.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  text-align: center;
+  padding-top: 12%;
+}
+.container .app h1 {
+  font-size: 4.7rem;
+  font-weight: 400;
+}
+.container .app h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.container .para {
+  margin-top: 3rem;
+}
+.container .para p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.8;
+}
+.container .para button {
+  width: 14rem;
+  height: 4rem;
+  text-align: center;
+  border: none;
+  box-shadow: 0.2rem 0.3rem 0.2rem black;
+  margin-top: 3rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  transition: 1s;
+}
+.container .para p a {
+  background-color: #ccc7c7;
+  background-color: rgba(243, 243, 243, 0.5);
+  color: #000;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 0.2rem 0.4rem;
+  font-size: 1rem;
+  border-bottom: 0.1rem dotted #000;
+}
+.container .para p #download_btn:hover {
+  box-shadow: none;
+}
+
+.features {
+  width: 100%;
+  height: auto;
+  background-image: url("../images/pattern_bg.png");
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  transition: 1s;
+  padding-bottom: 10%;
+}
+.features h1 {
+  padding: 6%;
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+.features .inner {
+  margin: 0 1%;
+  padding: 1%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.features .inner .content {
+  height: 400px;
+  background-color: #ccc7c7;
+  color: #455a64;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 350px;
+  transition: 0.5s;
+}
+.features .inner .content .white_div {
+  height: 366px;
+  background-color: #fff;
+  flex: 1 1 348px;
+  margin: 0.9rem;
+}
+.features .inner .content .white_div .fa {
+  font-size: 3.3rem;
+  padding-top: 2.9rem;
+}
+.features .inner .content .white_div p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #4f4b4b;
+  padding: 2.2rem 3.5rem;
+  line-height: 1.7;
+  transition: 0.7s;
+}
+.features .inner .content:hover {
+  transform: scaleY(1.2);
+  background-color: rgba(0, 132, 255, 0.3);
+}
+.features .inner .content:hover .white_div {
+  transform: scaleX(1.1);
+  background-color: rgba(41, 138, 230, 0.981);
+}
+.features .inner .content:hover .white_div p, .features .inner .content:hover .white_div .fa {
+  color: #fff;
+  text-shadow: 0.2rem 0.6rem 0.3rem #202441;
+}
+
+.download {
+  width: 100%;
+  height: 800px;
+  background-image: url("../images/download_background.jpg");
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  padding-top: 10%;
+}
+.download .download_inner {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: columns;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.download .download_inner p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.8;
+}
+.download .download_inner p {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+.download .download_inner .download_heading {
+  width: 100%;
+}
+.download .download_inner .download_heading h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
+.download .download_inner .digit {
+  width: 100%;
+}
+.download .download_inner .digit h1 {
+  font-size: 4.8rem;
+  font-weight: 400;
+  margin: 3rem 0;
+}
+.download .download_inner .digit button {
+  width: 14rem;
+  height: 4rem;
+  text-align: center;
+  border: none;
+  box-shadow: 0.2rem 0.3rem 0.2rem black;
+  margin-top: 3rem;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  transition: 1s;
+  background: url("../images/download_btn.png") no-repeat center top;
+  width: 16rem;
+}
+
+.contact {
+  width: 100%;
+  height: 980px;
+  background-image: url("../images/pattern_bg.png");
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact h1 {
+  padding: 2.2% 0 3%;
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+.contact p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.8;
+}
+.contact p {
+  font-weight: 400;
+  line-height: 2.2;
+}
+.contact i {
+  margin-right: 0.5rem;
+}
+.contact form {
+  width: 37%;
+}
+.contact form .control {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #fff;
+  padding: 3rem 0 1rem;
+  font-size: 1.1rem;
+}
+.contact form input:focus {
+  outline: none;
+}
+.contact form textarea:focus {
+  outline: none;
+}
+.contact form .sendbtn {
+  width: 15rem;
+  height: 3rem;
+  background-color: #275267;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-bottom: 3px solid #fff;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  transition: 1s;
+}
+.contact form .sendbtn:hover {
+  background-color: #132829;
+}
+.contact .social {
+  margin-top: 1rem;
+  width: 35%;
+}
+.contact .social ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+.contact .social ul li {
+  margin-top: 3rem;
+  border-radius: 50%;
+  padding-top: 0.8rem;
+  padding-right: 0.7rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1rem;
+  box-shadow: 0rem 0.2rem 0.8rem black;
+  text-align: center;
+  transition: 1s;
+}
+.contact .social ul li a {
+  color: #fff;
+  font-size: 2.7rem;
+  text-decoration: none;
+  transition: 1s;
+}
+.contact .social ul li a:hover {
+  color: #000000;
+}
+.contact .social ul li:hover {
+  box-shadow: none;
+  transform: rotate(360deg);
+}
+.contact .social ul .color_facebook {
+  background-color: #4a6fb5;
+}
+.contact .social ul .color_twitter {
+  background-color: #28a9e0;
+}
+.contact .social ul .color_youtube {
+  background-color: #f86d70;
+}
+.contact .social ul .color_instagram {
+  background-color: #cab9a9;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+}
+footer h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #455a64;
+  padding: 4rem 0;
+}
+
+@media (max-width: 1268px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1120px) {
+  html {
+    font-size: 15px;
+  }
+
+  .features .inner {
+    flex-wrap: wrap;
+    padding: 10%;
+  }
+  .features .inner .content {
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 895px) {
+  .features .inner {
+    flex-wrap: wrap;
+    padding: 10%;
+  }
+  .features .inner .content .white_div p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .contact form {
+    width: 50%;
+  }
+  .contact .social {
+    width: 50%;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    padding-top: 30%;
+  }
+
+  html {
+    font-size: 13px;
+  }
+
+  .contact form {
+    width: 60%;
+  }
+  .contact .social {
+    width: 60%;
+  }
+}
+@media (max-width: 450px) {
+  .contact form {
+    width: 80%;
+  }
+  .contact .social {
+    width: 80%;
+  }
+}
+@media (max-width: 460px) {
+  .download {
+    padding-top: 25%;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 11px;
+  }
+}/*# sourceMappingURL=style.css.map */

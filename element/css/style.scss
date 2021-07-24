@@ -1,0 +1,377 @@
+$font-family: "Fira Sans", sans-serif;
+$maincolor: #455a64;
+$white: #fff;
+$greycolor: rgb(204, 199, 199);
+$blackcolor: #000;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $maincolor;
+  font-family: $font-family;
+ 
+}
+
+@mixin p {
+  p {
+    font-size: 1.3rem;
+    color: $blackcolor;
+    line-height: 2;
+  }
+}
+
+@mixin h1pro {
+  h1 {
+    text-align: left;
+    font-size: 3.5rem;
+    font-weight: 300;
+  }
+}
+
+@mixin h2pro {
+  h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1.7rem;
+    text-align: left;
+  }
+}
+
+.menu {
+  position: fixed;
+  z-index: 998;
+  top: 50px;
+  right: 70px;
+  text-align: center;
+  border-radius: 100%;
+  background-color: $white;
+  color: $maincolor;
+  padding: 0 1rem;
+  font-size: 3rem;
+  box-shadow: 0rem 0.2rem 0.8rem rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+nav {
+  top: 110px;
+  right: 70px;
+  z-index: 999;
+  display: none;
+  position: fixed;
+  background-color: $white;
+  padding: 2rem 6rem 1rem 3rem;
+  border-radius: 5px;
+  box-shadow: 0.1rem 0.2rem 0.8rem rgb(0, 0, 0);
+
+   
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+
+    li {
+      margin-bottom: 1.7rem;
+      a {
+        color: $maincolor;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 500;
+        transition: 1s;
+      }
+      a:hover{ color: rgb(71, 206, 255); 
+        text-shadow: 0.2rem 0.6rem 0.3rem rgb(32, 36, 65);
+        }
+       
+    
+    }
+  }
+
+  
+}
+
+//-------------------------------- navigation ends here-------------------------------------
+
+.container {
+  width: 75%;
+  background-color: $white;
+  padding: 3%;
+  margin: 3% auto;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include p;
+  @include h2pro;
+  @include h1pro;
+  .text_center {
+    width: 75%;
+    margin: 10% 0;
+
+    h1 {
+      text-align: center;
+      font-size: 3.5rem;
+      font-weight: 300;
+    }
+  }
+
+  // sections starts from ===================================================================
+
+  .typo_elements {
+    width: 500px;
+    padding: 2rem;
+    
+  }
+
+  .heada_and_para {
+    width: 500px;
+    padding: 2rem;
+  
+  }
+
+  .headings {
+    width: 500px;
+    margin-top: 6%;
+    padding: 2rem;
+   
+    h2 {
+    font-size: none;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  }
+
+  .Blockquote {
+    width: 500px;
+    margin-top: 6%;
+    padding: 2rem;
+   
+   
+  }
+
+  .list {
+    width: 500px;
+    margin-top: 6%;
+    padding: 2rem;
+   
+
+    ul,ol{
+      margin:1rem 3rem;
+
+       li{font-size: 1.2rem; 
+      line-height: 1.6;}
+    }
+  }
+
+  .defination {
+    width: 500px;
+    margin-top: 6%;
+    padding: 2rem;
+ 
+   h4{ font-size: 1.3rem;
+  font-weight: 600;}
+  }
+}
+
+
+// contact section starts from here
+
+.contact {
+  width: 100%;
+  height: 980px;
+  background-image: url("../images/pattern_bg.png");
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+   
+
+  h1 {
+    padding: 2.2% 0 3%;
+    font-size: 3.2rem;
+    font-weight: 400;
+  }
+
+  @include p;
+  p {
+    font-weight: 400;
+    line-height: 2.2;
+    color: $white;
+  }
+
+  i {
+    margin-right: 0.5rem;
+  }
+
+  form {
+    
+  
+   width: 37%;
+  
+
+    .control {
+       width: 100%;
+      background-color: transparent;
+      border: none;
+      border-bottom: 3px solid $white;
+      padding: 3rem 0 1rem;
+      font-size: 1.1rem;
+     
+    }
+
+    
+    .sendbtn {
+      width: 15rem;
+      height: 3rem;
+      background-color: #275267;
+      color: $white;
+      font-size: 1.2rem;
+      border: none;
+      border-bottom: 3px solid $white;
+      margin-top: 2rem;
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: auto;
+    }
+  }
+
+  .social {
+    margin-top: 1rem;
+    // background-color: yellow;
+    width: 35%;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      list-style: none;
+
+      li {
+        margin-top: 3rem;
+        // margin-left: 3.5rem;
+        border-radius: 50%;
+        padding-top: 0.8rem;
+        padding-right: 0.7rem;
+        padding-bottom: 0.8rem;
+        padding-left: 1rem;
+        box-shadow: 0rem 0.2rem 0.8rem rgb(0, 0, 0);
+        text-align: center;
+
+        a {
+          color: $white;
+          font-size: 2.7rem;
+          text-decoration: none;
+        }
+
+        a:hover {
+          transform: rotate(360deg);
+          color: #223741;
+        }
+      }
+      .color_facebook {
+        background-color: #4a6fb5;
+      }
+      .color_twitter {
+        background-color: #28a9e0;
+      }
+      .color_youtube {
+        background-color: #f86d70;
+      }
+      .color_instagram {
+        background-color: #cab9a9;
+      }
+    }
+  }
+}
+// contact section ends here
+
+// media query 
+
+@media (max-width: 1000px) {
+
+   
+  .contact {
+ 
+   
+    form {
+      width: 50%;
+    }
+    .social {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+
+  
+     html{
+       font-size: 12px;
+     
+     }
+  .contact {
+    p {
+      font-size: 1rem;
+    }
+    form {
+      width: 80%;
+    }
+
+    .social {
+      width: 80%;
+
+      ul {
+        li {
+          a {
+            color: $white;
+            font-size: 2rem;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+@media(max-width:320px){
+
+     html{
+       font-size: 10px;
+     }
+   
+    .contact {
+    height: 600px;
+   
+    p {
+      font-size: 0.8rem;
+    }
+
+    .social {
+      ul {
+        li {
+          a {
+            color: $white;
+            font-size: 1.3rem;
+           
+          }
+        }
+      }
+    }
+    }
+  }
+}
+
