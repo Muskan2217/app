@@ -44,13 +44,6 @@ body {
 
 
 
-// @mixin samepro ( $value, $value ){
-
-//     font-size: $value;
-//     font-weight: $value;
-// }
-
-
 #btn:hover,.menu:hover{ box-shadow: 0rem 0.2rem 0.8rem $white;
   color:$white;
   background-color:rgba(0, 132, 255, 0.3);}
@@ -143,6 +136,7 @@ nav {
 
 .para {
   margin-top: 3rem;
+  padding: 0 1rem;
   @include p;
   button { @include btn;
  
@@ -159,15 +153,21 @@ nav {
       padding: 0.2rem 0.4rem;
       font-size: 1rem;
       border-bottom: 0.1rem dotted #000;
-
-     
+      transition: .5s;
     }
+
      #download_btn:hover{
    box-shadow: none;
   }
       
   }
 
+  a:hover{
+    text-decoration: none;
+    background-color: transparent;
+    color: rgba(41, 138, 230, 0.981);
+    text-shadow: 0rem 0.2rem 0.8rem $white;
+  }
   
 }
 
@@ -325,7 +325,7 @@ nav {
     button {
       @include btn;
       background:url("../images/download_btn.png") 
-      no-repeat center top ;
+      no-repeat center;
 
       width: 16rem;
     

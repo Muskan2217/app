@@ -77,11 +77,30 @@
 @media (max-width: 460px) {
   .download {
     padding-top: 25%;
+
+   
   }
+  .menu {
+  
+    top: 30px;
+    right: 20px;
+
+}
+nav{
+      top: 80px;
+    right: 25px;
+}
 }
 
 @media (max-width: 400px) {
   html {
     font-size: 11px;
+  }
+   .download {
+   .digit{
+     button{ width: 18rem;}
+   }
+
+   
   }
 }

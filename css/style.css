@@ -89,6 +89,7 @@ nav ul li a:hover {
 }
 .container .para {
   margin-top: 3rem;
+  padding: 0 1rem;
 }
 .container .para p {
   font-size: 1.4rem;
@@ -116,9 +117,16 @@ nav ul li a:hover {
   padding: 0.2rem 0.4rem;
   font-size: 1rem;
   border-bottom: 0.1rem dotted #000;
+  transition: 0.5s;
 }
 .container .para p #download_btn:hover {
   box-shadow: none;
+}
+.container .para a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color: rgba(41, 138, 230, 0.981);
+  text-shadow: 0rem 0.2rem 0.8rem #fff;
 }
 
 .features {
@@ -240,7 +248,7 @@ nav ul li a:hover {
   margin-right: 1.5rem;
   cursor: pointer;
   transition: 1s;
-  background: url("../images/download_btn.png") no-repeat center top;
+  background: url("../images/download_btn.png") no-repeat center;
   width: 16rem;
 }
 
@@ -432,9 +440,23 @@ footer h2 {
   .download {
     padding-top: 25%;
   }
+
+  .menu {
+    top: 30px;
+    right: 20px;
+  }
+
+  nav {
+    top: 80px;
+    right: 25px;
+  }
 }
 @media (max-width: 400px) {
   html {
     font-size: 11px;
+  }
+
+  .download .digit button {
+    width: 18rem;
   }
 }/*# sourceMappingURL=style.css.map */
