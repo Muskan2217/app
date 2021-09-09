@@ -26,7 +26,7 @@
                    <li><a href="#feature_btn">Features</a></li>
                     <li><a href="#download_btn">Download</a></li>
                      <li><a href="#">Fan Page</a></li>
-                      <li><a href="element/element.html">Elements</a></li>
+                      <li><a href="element.html">Elements</a></li>
                        <li><a href="#contact_link">Contact</a></li>
               </ul>
           </nav>
@@ -231,6 +231,12 @@
               $(".menu").click(function(){
                
                  $("nav").toggle(300);
+                 
+              })
+
+               $("li a").click(function(){
+               
+                 $("nav").hide(300);
                  
               })
            </script>
